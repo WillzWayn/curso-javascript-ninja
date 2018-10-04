@@ -7,15 +7,32 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+console.log("Declare uma variavel isTruthy e atribua a ela uma função que recebe um unico parametro. essa funcao retorna true ou false de acordo com o argumento passado");
+
+isTruthy = function(x){
+    if(x == true){
+        return true;
+    }
+return false;
+}
+
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+isTruthy(0);
+isTruthy(false);
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+
+console.log('Verificar dps isso de truthy.')
+isTruthy(true);
+isTruthy(1);
+isTruthy({});
+isTruthy([]);
+isTruthy('string qualquer');
+isTruthy(2919293);
+
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -29,28 +46,41 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-?
+var carro = {
+    marca: 'Siena',
+    modelo: 'Esporte',
+    placa: 'lcd-2454',
+    ano: 1998,
+    cor: 'Vermelho',
+    quantasPortas: 4,
+    assentos: 5,
+    quantidadeDePessoas: 0
+}
+
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-?
+carro.mudarCor = function(x){ carro.cor = x};
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-?
+obterCor = carro.cor;
+console.log(obterCor);
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-?
+obterModelo = carro.modelo
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-?
+
+obterMarca = carro.marca;
+console.log(obterMarca);
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
